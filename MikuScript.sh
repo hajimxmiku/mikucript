@@ -270,6 +270,10 @@ service fail2ban restart
 service squid3 restart
 service webmin restart
 
+#remove some useless fil
+rm MikuScript.sh
+cat /dev/null > ~/.bash_history && history -c && exit
+
 # info
 clear
 echo "Script by Miku"
