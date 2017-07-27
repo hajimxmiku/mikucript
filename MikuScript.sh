@@ -270,13 +270,14 @@ service fail2ban restart
 service squid3 restart
 service webmin restart
 
-#remove some useless fil
-rm MikuScript.sh
-cat /dev/null > ~/.bash_history && history -c && exit
+
+
+
 
 # info
 clear
 echo "Script by Miku"
+
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.tar)"
 echo "OpenSSH  : 22, 143"
 echo "Dropbear : 109, 110, 443"
@@ -293,3 +294,9 @@ echo -e "Playstation Block : [\e[32mon\e[0m]"
 echo -e "Please type \e[1;33;44mmenu\e[0m for options"
 
 echo "================================================"
+
+#remove some useless file
+
+cat /dev/null > ~/.bash_history && history -c && exit
+rm MikuScript.sh
+rm master.zip
